@@ -41,7 +41,7 @@ def safe_api_call(func, *args, retries=5, delay=3, backoff=2, jitter=True, **kwa
 # ======================
 # Binance Client
 # ======================
-api_key_live = "Mf7g8cYyWuHJT0MPwHVzioCDaiyhXJJvP4Xp8p7m4rhov0IXzFzTbiAaztdp9e4W"  # from Binance app
+api_key_live =  'BINANCE_TESTNET_API_KEY' # from Binance app
 
 def get_binance_client(testnet=TESTNET):
     """
@@ -133,3 +133,4 @@ if __name__ == "__main__":
 
     except Exception as e:
         print(f"✗ An error occurred: {e}")
+
