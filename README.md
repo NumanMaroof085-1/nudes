@@ -25,7 +25,8 @@ setx BINANCE_TESTNET_SECRET_KEY "your_secret_key"
 - **`binance_client.py`** → Handles connection to Binance & fetches live market data.  
 - **`risk_management.py`** → Calculates position size (also has a fixed quantity option).  
 - **`executor.py`** → Executes trades (entry/exit) based on signals and fetched data.  
-- **`main.py`** → Runs the bot at the desired intervals.  
+- **`main.py`** → Runs the bot at the desired intervals.
+- **`apiinfo.py`** → got some function etc to get info about your account (Run without editing to see balance and orders)
 
 ---
 
