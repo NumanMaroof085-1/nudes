@@ -29,8 +29,13 @@ setx BINANCE_TESTNET_SECRET_KEY "your_secret_key"
 - **`apiinfo.py`** → got some function etc to get info about your account (Run without editing to see balance and orders)
 
 ---
+### 3. Testnet or live
+- **`live`** -> Go to binance_client.py and in the start of code, change the TESTNET = True to TESTNET = False.
+- **`Testnet`** -> Keep everything same , dont change anything.
 
-### 3. Running the Bot
+---
+
+### 4. Running the Bot
 Make sure all **4 files are in the same folder**. Then run:
 
 ```bash
@@ -39,7 +44,7 @@ python main.py
 
 ---
 
-### 4. Keep the Bot Running
+### 5. Keep the Bot Running
 The bot only works while `main.py` is running.  
 To keep it running 24/7, you can use:
 - **VS Code terminal** (keep open)  
