@@ -29,7 +29,7 @@ def calculate_position_size1():
     position_size = base_position * scale_factor
     
     # Apply LOT_SIZE filter (round to 6 decimal places for BTC)
-    position_size = round(position_size, 4)
+    position_size = round(position_size, 5)
     
     # Ensure minimum position size of 0.0001 BTC
     position_size = max(position_size, 0.0001)
@@ -46,4 +46,5 @@ def calculate_position_size():
     """
     Fixed quantity trading - no calculations needed
     """
+
     return 0.5  # Same as FIXED_QUANTITY in executor.py
