@@ -55,8 +55,8 @@ def get_open_position():
         for balance in account['balances']:
             if balance['asset'] == 'BTC':
                 btc_balance = float(balance['free']) + float(balance['locked'])
-                if btc_balance >= 0.00015:
-                    return round(btc_balance, 4), 'LONG'
+                if btc_balance >= 0.00001:
+                    return round(btc_balance, 5), 'LONG'
         return 0, 'NONE'
     except Exception as e:
         print(f"Error checking position: {e}")
@@ -211,3 +211,4 @@ if __name__ == "__main__":
     #     except Exception as e:
     #         print(f"Unexpected error: {e}")
     #         time.sleep(60)
+
