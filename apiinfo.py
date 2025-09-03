@@ -2,14 +2,18 @@ from binance.client import Client
 import os
 
 # Replace these with your actual keys from the testnet page
-api_key = os.environ.get('BINANCE_TESTNET_API_KEY')
-api_secret = os.environ.get('BINANCE_TESTNET_SECRET_KEY')
+# api_key = os.environ.get('BINANCE_TESTNET_API_KEY')
+# api_secret = os.environ.get('BINANCE_TESTNET_SECRET_KEY')
+# print(os.environ.get('BINANCE_TESTNET_API_KEY'))
+# print(os.environ.get('BINANCE_TESTNET_SECRET_KEY'))
 
-print(os.environ.get('BINANCE_TESTNET_API_KEY'))
-print(os.environ.get('BINANCE_TESTNET_SECRET_KEY'))
+api_key = os.environ.get('BINANCE_LIVE_API_KEY')
+api_secret = os.environ.get('BINANCE_LIVE_SECRET_KEY')
+print(os.environ.get('BINANCE_LIVE_API_KEY'))
+print(os.environ.get('BINANCE_LIVE_SECRET_KEY'))
 
 # The 'testnet=True' flag is crucial! It points the client to the testnet URL.
-client = Client(api_key, api_secret, testnet=True)
+client = Client(api_key, api_secret)
 
 # Make a simple API call to get account information
 account_info = client.get_account()

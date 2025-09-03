@@ -41,7 +41,7 @@ def safe_api_call(func, *args, retries=5, delay=3, backoff=2, jitter=True, **kwa
 # ======================
 # Binance Client
 # ======================
-api_key_live =  'BINANCE_TESTNET_API_KEY' # from Binance app
+api_key_live = os.environ.get('BINANCE_LIVE_API_KEY') # from Binance app
 
 def get_binance_client(testnet=TESTNET):
     """

@@ -9,11 +9,19 @@ A simple Binance trading bot that connects to the Binance, fetches market data, 
 ### 1. Set up API Keys
 Get your **API Key** and **Secret Key** from [Binance].  
 Set them as environment variables:
+FOR TESTNET
 
 ```bash
 # Run these in VS Code terminal or CMD (Windows)
 setx BINANCE_TESTNET_API_KEY "your_api_key"
 setx BINANCE_TESTNET_SECRET_KEY "your_secret_key"
+```
+FOR LIVE
+
+```bash
+# Run these in VS Code terminal or CMD (Windows)
+setx BINANCE_LIVE_API_KEY "your_api_key"
+setx BINANCE_LIVE_SECRET_KEY "your_secret_key"
 ```
 
 > ⚠ After running the commands, restart VS Code (and its terminal) to ensure the keys are applied.
